@@ -22,11 +22,26 @@
      e houver ao menos um depoimento REAL em CONFIG.provaSocial.depoimentos.
   3. Preço riscado/prazo do Completo: fica desligado. Só ative se R$ 34,90
      for preço regular efetivamente praticado e o prazo valer também no checkout.
-  4. Cole aqui o snippet de análise (GA4, Meta Pixel, GTM) se for usar.
-     Os cliques nos três checkouts disparam eventos separados por plano.
-     Clique em checkout NÃO é compra: confirme vendas na Wiapy.
+  4. Rastreamento: Meta Pixel instalado abaixo (PageView no carregamento e
+     InitiateCheckout no clique de cada kit). Não instale outra cópia do Pixel.
+     Clique em checkout NÃO é compra: Purchase deve vir da integração da Wiapy.
+  5. [UTMIFY] Script de UTMs pendente: cole aqui o código fornecido pela UTMify.
 -->
-<!-- [ANALYTICS] cole aqui o GTM / GA4 / Meta Pixel -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1674353514358667');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 
 <script>
 /* Animações de entrada: só liga se o navegador suportar e a pessoa não pedir menos movimento.
@@ -293,6 +308,8 @@ a{color:var(--salvia-forte)}
 </style>
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscript=1"></noscript>
 
 <header class="topo">
   <div class="wrap">
@@ -779,21 +796,29 @@ var CONFIG = {
   }
 
   /* ---------- Medição de cliques por plano ----------
-     Dispara eventos separados para cada checkout.
-     ATENÇÃO: clique em checkout ≠ compra aprovada. A conversão em compra
-     deve ser confirmada nos relatórios da plataforma de pagamento. */
+     Cada botão de compra dispara um InitiateCheckout do Meta Pixel com o kit,
+     o valor numérico e a moeda. O evento é enviado sem impedir nem atrasar a
+     navegação (nada de preventDefault ou espera).
+     ATENÇÃO: clique em checkout ≠ compra aprovada. Purchase NÃO é disparado aqui;
+     ele deve vir da integração da plataforma de pagamento após a confirmação. */
+  var nomesKit = { essencial: "Kit Essencial", ampliado: "Kit Ampliado", completo: "Kit Completo" };
   document.querySelectorAll("[data-checkout]").forEach(function (a) {
     a.addEventListener("click", function () {
-      var plano = a.getAttribute("data-plano");
-      var valor = parseFloat(a.getAttribute("data-valor"));
-      var dados = { event: "clique_checkout", plano: plano, valor: valor, moeda: "BRL", link_id: a.id };
-      (window.dataLayer = window.dataLayer || []).push(dados);
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "clique_checkout", { plano: plano, value: valor, currency: "BRL", transport_type: "beacon" });
-      }
-      if (typeof window.fbq === "function") {
-        window.fbq("trackCustom", "CliqueCheckout", { plano: plano, value: valor, currency: "BRL" });
-      }
+      try {
+        var plano = a.getAttribute("data-plano");
+        var valor = parseFloat(a.getAttribute("data-valor"));
+        (window.dataLayer = window.dataLayer || []).push({ event: "clique_checkout", plano: plano, valor: valor, moeda: "BRL", link_id: a.id });
+        if (typeof window.fbq === "function") {
+          window.fbq("track", "InitiateCheckout", {
+            content_name: nomesKit[plano],
+            content_ids: [plano],
+            content_type: "product",
+            num_items: 1,
+            value: valor,
+            currency: "BRL"
+          });
+        }
+      } catch (e) { /* rastreamento nunca bloqueia a compra */ }
     });
   });
 })();
