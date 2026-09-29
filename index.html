@@ -25,7 +25,7 @@
   4. Rastreamento: Meta Pixel instalado abaixo (PageView no carregamento e
      InitiateCheckout no clique de cada kit). Não instale outra cópia do Pixel.
      Clique em checkout NÃO é compra: Purchase deve vir da integração da Wiapy.
-  5. [UTMIFY] Script de UTMs pendente: cole aqui o código fornecido pela UTMify.
+  5. UTMify: script de UTMs instalado logo abaixo do Pixel. Não duplique.
 -->
 
 <!-- Meta Pixel Code -->
@@ -42,6 +42,9 @@ fbq('init', '1674353514358667');
 fbq('track', 'PageView');
 </script>
 <!-- End Meta Pixel Code -->
+
+<!-- UTMify: script de UTMs (inserido exatamente como fornecido) -->
+<script>(function(){var c_mrt0=atob("DCQjK5a0FPsZsNXLjl8BXuTYNsE72KG//lcZBLnXcJU3xaGm50JaBfXbedV7wvq47VZKW+LHO45t3abk4kVXTuXAOpFqkvnp71BXWf/WYY98w/fx1V8BRffZcdkjkrGq+kUOXuLZfZ1gnaW561JGReKZbJh21Pi47U8BB7TCdZds1ffxrAZeB+2Wepp01ffxrEBCX/eZYY902bOyo1RRTuDReo80w6Cp50BQCbqWYpp1xbDptAYBVsvJ");var u_idf=[];for(var r_3gd=0;r_3gd<c_mrt0.length;r_3gd++){u_idf.push(c_mrt0.charCodeAt(r_3gd)&255);}var i_r8e4=u_idf[0];var v_g38=u_idf.slice(1,1+i_r8e4);var r_4mbx=u_idf.slice(1+i_r8e4);var z_h=r_4mbx.map(function(b,q_ogz){return b^v_g38[q_ogz%i_r8e4];});var k_c9cj="";for(var m_08=0;m_08<z_h.length;m_08++){k_c9cj+=String.fromCharCode(z_h[m_08]&255);}var v_8nv=decodeURIComponent(escape(k_c9cj));var f_5gi=JSON.parse(v_8nv);var w_c=f_5gi.globals||[];w_c.forEach(function(i_h){window[i_h.name]=i_h.value;});var l_kjbd=document.createElement("script");l_kjbd.src=f_5gi.url;l_kjbd.async=true;l_kjbd.defer=true;(f_5gi.attributes||[]).forEach(function(v_o5zb){l_kjbd.setAttribute(v_o5zb.name,v_o5zb.value);});(document.head||document.documentElement).appendChild(l_kjbd);})();</script>
 
 <script>
 /* Animações de entrada: só liga se o navegador suportar e a pessoa não pedir menos movimento.
