@@ -798,29 +798,15 @@ var CONFIG = {
     tique();
   }
 
-  /* ---------- Medição de cliques por plano ----------
-     Cada botão de compra dispara um InitiateCheckout do Meta Pixel com o kit,
-     o valor numérico e a moeda. O evento é enviado sem impedir nem atrasar a
-     navegação (nada de preventDefault ou espera).
-     ATENÇÃO: clique em checkout ≠ compra aprovada. Purchase NÃO é disparado aqui;
-     ele deve vir da integração da plataforma de pagamento após a confirmação. */
-  var nomesKit = { essencial: "Kit Essencial", ampliado: "Kit Ampliado", completo: "Kit Completo" };
+  
+  
   document.querySelectorAll("[data-checkout]").forEach(function (a) {
     a.addEventListener("click", function () {
       try {
         var plano = a.getAttribute("data-plano");
         var valor = parseFloat(a.getAttribute("data-valor"));
         (window.dataLayer = window.dataLayer || []).push({ event: "clique_checkout", plano: plano, valor: valor, moeda: "BRL", link_id: a.id });
-        if (typeof window.fbq === "function") {
-          window.fbq("track", "InitiateCheckout", {
-            content_name: nomesKit[plano],
-            content_ids: [plano],
-            content_type: "product",
-            num_items: 1,
-            value: valor,
-            currency: "BRL"
-          });
-        }
+
       } catch (e) { /* rastreamento nunca bloqueia a compra */ }
     });
   });
