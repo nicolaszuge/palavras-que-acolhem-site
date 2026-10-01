@@ -22,9 +22,9 @@
      e houver ao menos um depoimento REAL em CONFIG.provaSocial.depoimentos.
   3. Preço riscado/prazo do Completo: fica desligado. Só ative se R$ 34,90
      for preço regular efetivamente praticado e o prazo valer também no checkout.
-  4. Rastreamento: Meta Pixel instalado abaixo (PageView no carregamento e
-     InitiateCheckout no clique de cada kit). Não instale outra cópia do Pixel.
-     Clique em checkout NÃO é compra: Purchase deve vir da integração da Wiapy.
+  4. Rastreamento: Meta Pixel abaixo envia PageView no carregamento.
+     A Wiapy envia InitiateCheckout no checkout e Purchase após o pagamento.
+     Não duplique o Pixel ou esses eventos nesta página.
   5. UTMify: script de UTMs instalado logo abaixo do Pixel. Não duplique.
 -->
 
