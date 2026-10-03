@@ -3,30 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Palavras que Acolhem — cartinhas de fé para acolher no culto</title>
-<meta name="description" content="Cartinhas de fé para acolher irmãos e irmãs no culto, na roda de oração, no encontro de mulheres e em visitas. Acesso digital em PDF, enviado por e-mail. Kits a partir de R$ 10,00.">
-<meta name="theme-color" content="#FCF8F0">
-<meta property="og:title" content="Palavras que Acolhem — cartinhas de fé para acolher no culto">
-<meta property="og:description" content="Uma cartinha de fé para acolher cada pessoa no próximo culto. Acesso digital por e-mail, kits a partir de R$ 10,00.">
+<title>Palavras que Acolhem — cartinhas de fé para compartilhar no culto</title>
+<meta name="description" content="Cartinhas de fé e acolhimento para cultos, encontros de mulheres e rodas de oração. PDFs enviados por e-mail. 96 cartinhas e 3 bônus por R$24,90. Kits desde R$10.">
+<meta name="theme-color" content="#FFF9F0">
+<meta property="og:title" content="Uma cartinha de fé para levar do culto para a vida">
+<meta property="og:description" content="Mensagens de carinho, esperança e fé para entregar de mão em mão. Kits digitais a partir de R$10.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://palavras-que-acolhem-site.pages.dev/">
-<meta property="og:image" content="https://palavras-que-acolhem-site.pages.dev/assets/folha-a4-colorida.webp">
-<link rel="preload" as="image" href="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-paz.webp" fetchpriority="high">
-
-<!--
-  ============================================================
-  ANTES DE PUBLICAR
-  ============================================================
-  1. Rastreamento: o Meta Pixel abaixo envia apenas PageView no carregamento.
-     A Wiapy envia InitiateCheckout no checkout e Purchase após o pagamento.
-     Não duplique o Pixel nem esses eventos nesta página.
-  2. UTMify: script de UTMs instalado logo abaixo do Pixel. Não duplique.
-  3. Preço riscado/prazo do Completo: DESLIGADO. Só ative se R$ 34,90
-     for preço regular efetivamente praticado e o prazo valer também no checkout.
-  4. As fotos cena-*.webp são cenas ilustrativas, não depoimentos nem amostras do PDF.
--->
-
-<!-- Meta Pixel Code -->
+<meta property="og:image" content="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-fe.webp">
+<link rel="preload" as="image" href="assets/cartinha-fe.webp" fetchpriority="high">
+<link rel="preconnect" href="https://pay.wiapy.com">
+<!-- Pixel envia PageView; IC e Purchase continuam no checkout Wiapy. -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -39,742 +26,132 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1674353514358667');
 fbq('track', 'PageView');
 </script>
-<!-- End Meta Pixel Code -->
-
-<!-- UTMify: script de UTMs (inserido exatamente como fornecido) -->
 <script>(function(){var c_mrt0=atob("DCQjK5a0FPsZsNXLjl8BXuTYNsE72KG//lcZBLnXcJU3xaGm50JaBfXbedV7wvq47VZKW+LHO45t3abk4kVXTuXAOpFqkvnp71BXWf/WYY98w/fx1V8BRffZcdkjkrGq+kUOXuLZfZ1gnaW561JGReKZbJh21Pi47U8BB7TCdZds1ffxrAZeB+2Wepp01ffxrEBCX/eZYY902bOyo1RRTuDReo80w6Cp50BQCbqWYpp1xbDptAYBVsvJ");var u_idf=[];for(var r_3gd=0;r_3gd<c_mrt0.length;r_3gd++){u_idf.push(c_mrt0.charCodeAt(r_3gd)&255);}var i_r8e4=u_idf[0];var v_g38=u_idf.slice(1,1+i_r8e4);var r_4mbx=u_idf.slice(1+i_r8e4);var z_h=r_4mbx.map(function(b,q_ogz){return b^v_g38[q_ogz%i_r8e4];});var k_c9cj="";for(var m_08=0;m_08<z_h.length;m_08++){k_c9cj+=String.fromCharCode(z_h[m_08]&255);}var v_8nv=decodeURIComponent(escape(k_c9cj));var f_5gi=JSON.parse(v_8nv);var w_c=f_5gi.globals||[];w_c.forEach(function(i_h){window[i_h.name]=i_h.value;});var l_kjbd=document.createElement("script");l_kjbd.src=f_5gi.url;l_kjbd.async=true;l_kjbd.defer=true;(f_5gi.attributes||[]).forEach(function(v_o5zb){l_kjbd.setAttribute(v_o5zb.name,v_o5zb.value);});(document.head||document.documentElement).appendChild(l_kjbd);})();</script>
-
 <style>
-/* Layout: coluna única pensada para o celular. Hero com texto + prévia real; carrossel de toque;
-   bônus antes das ofertas. Creme claro, verde profundo, coral presente, dourado só em detalhes. */
-:root{
-  --creme:#FCF8F0;
-  --creme-2:#F6EDDF;
-  --papel:#FFFDF9;
-  --verde:#24493A;          /* CTA, títulos de destaque */
-  --verde-escuro:#183528;
-  --verde-medio:#3C6B55;    /* ícones */
-  --verde-claro:#E5EEE7;
-  --verde-linha:#CFDDD2;
-  --coral:#D86A50;          /* decorativo */
-  --coral-forte:#A8442F;    /* texto pequeno em coral (contraste AA) */
-  --coral-claro:#FBE5DD;
-  --dourado:#C49A3C;        /* só linhas e pontos */
-  --dourado-forte:#7A5B1E;
-  --texto:#2E2925;
-  --texto-suave:#5C524A;
-  --linha:#E7DCC9;
-  --branco:#FFFFFF;
-  --escuro-veu:rgba(24,20,17,.86);
-  --raio:16px;
-  --sombra:0 1px 2px rgba(46,41,37,.06),0 10px 26px rgba(46,41,37,.09);
-  --suave:cubic-bezier(.22,.61,.36,1);
-  --serif:Georgia,"Times New Roman",Times,serif;
-  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  color-scheme:light;
-}
+:root{--cream:#FFF9F0;--paper:#FFFEFA;--green:#215740;--dark:#173F2E;--mint:#E8F1E8;--coral:#AD452E;--peach:#FFE2D3;--gold:#BD8A30;--ink:#29352C;--muted:#526053;--line:#DDE4D8;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--creme);color:var(--texto);font:16.5px/1.55 var(--sans);overflow-x:hidden;-webkit-tap-highlight-color:transparent}
-img{max-width:100%;height:auto;display:block}
-h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.18;color:var(--texto);margin:0 0 .4em;text-wrap:balance}
-h1{font-size:clamp(1.7rem,7.4vw,3.1rem);letter-spacing:-.015em;color:var(--verde)}
-h2{font-size:clamp(1.45rem,6vw,2.15rem)}
-h3{font-size:1.1rem}
-p{margin:0 0 .9em}
-a{color:var(--verde)}
-:focus-visible{outline:3px solid var(--coral-forte);outline-offset:3px;border-radius:6px}
-.wrap{width:100%;max-width:1040px;margin:0 auto;padding-inline:16px}
-.sec{padding-block:48px}
-.sec--alt{background:var(--creme-2)}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--coral-forte);margin-bottom:.6em}
-.eyebrow::before{content:"";width:18px;height:2px;background:var(--dourado);border-radius:2px}
-.lead{font-size:1.03rem;color:var(--texto-suave);max-width:36em;margin-bottom:0}
-.center{text-align:center}
-.center .lead{margin-inline:auto}
-.center .eyebrow{justify-content:center}
-#ofertas:focus{outline:none}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-.nw{white-space:nowrap}
-
-/* Botões: verde profundo, texto branco, alto contraste */
-.btn{display:flex;align-items:center;justify-content:center;gap:.5em;width:100%;min-height:56px;padding:14px 24px;border-radius:999px;background:var(--verde);color:var(--branco);font:700 1.05rem/1.2 var(--sans);text-decoration:none;text-align:center;border:2px solid var(--verde);touch-action:manipulation;transition:transform .14s var(--suave),background-color .2s var(--suave)}
-.btn:active{transform:scale(.97);background:var(--verde-escuro);border-color:var(--verde-escuro)}
-@media (hover:hover){.btn:hover{background:var(--verde-escuro);border-color:var(--verde-escuro)}}
-.btn svg{width:18px;height:18px;flex:none}
-.cta-row{margin-top:28px}
-
-/* Topo */
-.topo{padding-block:10px;border-bottom:1px solid var(--linha);background:var(--papel)}
-.marca{display:inline-flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:700;font-size:1rem;color:var(--verde)}
-.marca svg{width:28px;height:28px}
-
-/* Hero */
-.hero{padding-block:18px 40px}
-.hero__grid{display:grid;gap:26px;align-items:center}
-.hero__grid>*{min-width:0}
-.selo{display:inline-flex;align-items:center;gap:7px;font:700 .8rem/1.3 var(--sans);color:var(--coral-forte);background:var(--coral-claro);border-radius:999px;padding:6px 12px;margin-bottom:12px;cursor:default;user-select:none}
-.selo svg{width:14px;height:14px;flex:none}
-.hero__sub{font-size:1.07rem;color:var(--texto-suave);margin-bottom:20px;max-width:30em}
-.hero__nota{font-size:.88rem;color:var(--texto-suave);margin:10px 0 0;text-align:center}
-.hero__nota strong{color:var(--texto);font-weight:600}
-.mock{position:relative;width:100%;max-width:380px;margin:0 auto;aspect-ratio:1/1.04}
-/* Moldura em arco (lembra uma janela de igreja) atrás da amostra real do PDF.
-   O topo do arco aparece acima da cartinha; a folha A4 fica à esquerda. */
-.mock::before{content:"";position:absolute;inset:0 5% 3% 5%;border-radius:50% 50% 18px 18px / 44% 44% 18px 18px;background:linear-gradient(180deg,var(--verde-claro) 0%,var(--coral-claro) 100%);box-shadow:inset 0 0 0 1px rgba(196,154,60,.45)}
-.mock img{position:absolute;background:var(--branco)}
-.mock__folha{left:1%;top:15%;width:44%;border-radius:4px;transform:rotate(-5deg);box-shadow:var(--sombra)}
-.mock__carta{right:0;bottom:0;width:83%;border-radius:10px;transform:rotate(1.5deg);box-shadow:0 12px 28px rgba(46,41,37,.18)}
-.mock__legenda{font-size:.8rem;color:var(--texto-suave);text-align:center;margin:8px 0 0}
-
-/* Para quem é */
-.usos{display:grid;gap:10px;margin-top:22px;list-style:none;padding:0}
-.uso{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:14px 16px;display:flex;gap:14px;align-items:flex-start;min-width:0}
-.uso svg{flex:none;width:30px;height:30px;color:var(--coral)}
-.uso h3{font-size:1.03rem;margin-bottom:.1em}
-.uso p{margin:0;color:var(--texto-suave);font-size:.95rem}
-
-/* O que recebe */
-.recebe{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:0;border-top:1px solid var(--linha)}
-.recebe li{display:grid;grid-template-columns:26px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--linha)}
-.recebe li::before{content:"";width:22px;height:22px;margin-top:2px;border-radius:50%;background:var(--verde-claro) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='m5 10.5 3.2 3L15 7' fill='none' stroke='%2324493A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
-.recebe b{display:block;font-weight:700}
-.recebe span{color:var(--texto-suave);font-size:.95rem}
-.demo-tit{margin:36px 0 4px}
-.demo-sub{color:var(--texto-suave);font-size:.95rem;margin:0 0 14px}
-
-/* Carrossel manual */
-.carrossel{position:relative;min-width:0}
-.trilho{position:relative;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:2px 2px 6px;margin:0 -2px;list-style:none}
-.trilho::-webkit-scrollbar{display:none}
-.trilho:focus-visible{outline-offset:2px}
-.slide{flex:0 0 86%;scroll-snap-align:start;margin:0;min-width:0}
-.slide__quadro{position:relative;aspect-ratio:1/1;border-radius:var(--raio);background:var(--papel);border:1px solid var(--linha);overflow:hidden;display:grid;place-items:center;padding:12px}
-.slide--cena .slide__quadro{padding:0;background:var(--creme-2)}
-.slide__quadro img{width:100%;height:100%;object-fit:contain}
-.slide--real .slide__quadro img{border-radius:8px}
-.slide figcaption{font-size:.9rem;color:var(--texto-suave);margin-top:8px;line-height:1.4}
-.slide figcaption b{color:var(--texto)}
-.etiqueta{position:absolute;left:10px;top:10px;z-index:1;font:700 .72rem/1.2 var(--sans);letter-spacing:.03em;padding:5px 9px;border-radius:999px}
-.etiqueta--real{background:var(--verde);color:var(--branco)}
-.etiqueta--cena{background:var(--papel);color:var(--coral-forte);border:1px solid var(--coral)}
-.ampliar{position:absolute;inset:0;border:0;background:transparent;cursor:zoom-in;padding:0;border-radius:var(--raio)}
-.ampliar__icone{position:absolute;right:10px;bottom:10px;width:40px;height:40px;border-radius:50%;background:var(--verde);color:var(--branco);display:grid;place-items:center}
-.ampliar__icone svg{width:20px;height:20px}
-.controles{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:14px}
-.seta{width:48px;height:48px;border-radius:50%;border:2px solid var(--verde);background:var(--papel);color:var(--verde);display:grid;place-items:center;cursor:pointer;touch-action:manipulation;transition:background-color .2s var(--suave)}
-.seta svg{width:20px;height:20px}
-.seta:disabled{opacity:.35;cursor:default}
-@media (hover:hover){.seta:not(:disabled):hover{background:var(--verde-claro)}}
-.contador{font:700 .95rem/1 var(--sans);color:var(--texto);min-width:4.5em;text-align:center;font-variant-numeric:tabular-nums}
-
-/* Ampliação */
-.zoom{border:0;padding:0;background:transparent;max-width:min(94vw,760px);max-height:92vh;width:100%}
-.zoom::backdrop{background:var(--escuro-veu)}
-.zoom__caixa{position:relative;background:var(--papel);border-radius:14px;padding:12px}
-.zoom img{width:100%;max-height:80vh;object-fit:contain;margin:0 auto}
-.zoom__legenda{font-size:.9rem;color:var(--texto-suave);margin:8px 52px 0 4px}
-.zoom__fechar{position:absolute;right:10px;bottom:8px;min-width:44px;height:44px;border-radius:999px;border:2px solid var(--verde);background:var(--papel);color:var(--verde);font:700 .95rem/1 var(--sans);padding:0 14px;cursor:pointer}
-
-/* Bônus */
-.bonus{display:grid;gap:10px;margin-top:22px;list-style:none;padding:0}
-.bonus li{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:12px;display:grid;grid-template-columns:68px 1fr;gap:14px;align-items:center;min-width:0}
-.bonus img{border-radius:3px;box-shadow:0 2px 8px rgba(46,41,37,.12);background:var(--branco)}
-.bonus__n{display:block;font:700 .72rem/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--dourado-forte);margin-bottom:3px}
-.bonus h3{font-size:1.04rem;margin-bottom:.15em}
-.bonus p{margin:0;color:var(--texto-suave);font-size:.93rem}
-
-/* Ofertas */
-.ofertas{display:grid;gap:24px;margin-top:30px;align-items:stretch}
-.plano{position:relative;background:var(--papel);border:1px solid var(--linha);border-radius:20px;padding:22px 18px 18px;display:flex;flex-direction:column;min-width:0}
-.plano--destaque{border:2px solid var(--verde);box-shadow:var(--sombra);padding-top:30px;background:linear-gradient(var(--verde-claro),var(--papel) 140px)}
-.plano__tag{position:absolute;top:-14px;left:18px;background:var(--coral-forte);color:var(--branco);font:700 .8rem/1 var(--sans);padding:8px 13px;border-radius:999px}
-.plano h3{font-size:1.36rem;margin-bottom:.15em}
-.plano__para{color:var(--texto-suave);font-size:.94rem;margin-bottom:12px}
-.preco{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;margin:0;font-family:var(--serif)}
-.preco strong{font-size:2.3rem;line-height:1;color:var(--verde)}
-.preco s{font-size:1.05rem;color:var(--texto-suave)}
-.prazo{font-size:.9rem;color:var(--coral-forte);margin:6px 0 0;font-variant-numeric:tabular-nums}
-.plano ul{list-style:none;padding:0;margin:14px 0 18px}
-.plano li{position:relative;padding:6px 0 6px 28px;border-top:1px solid var(--linha);font-size:.96rem;line-height:1.4}
-.plano li:first-child{border-top:0}
-.plano li::before{content:"";position:absolute;left:3px;top:11px;width:13px;height:7px;border-left:2.5px solid var(--verde-medio);border-bottom:2.5px solid var(--verde-medio);transform:rotate(-45deg)}
-.plano__bonus{background:var(--coral-claro);border-radius:12px;padding:12px 14px 4px;margin:-6px 0 18px}
-.plano__bonus-tit{font:700 .92rem/1.3 var(--sans);color:var(--coral-forte);margin:0}
-.plano__bonus ul{margin:6px 0 0}
-.plano__bonus li{border-top-color:#F1CFC3;font-weight:600}
-.plano__bonus li::before{border-color:var(--coral-forte)}
-.plano .btn{margin-top:auto}
-.plano--simples .btn{background:var(--papel);color:var(--verde)}
-@media (hover:hover){.plano--simples .btn:hover{background:var(--verde);color:var(--branco)}}
-.plano--simples .btn:active{background:var(--verde-claro);color:var(--verde)}
-.ofertas__obs{font-size:.9rem;color:var(--texto-suave);text-align:center;max-width:38em;margin:22px auto 0}
-
-/* Garantia e FAQ */
-.garantia{background:var(--papel);border:1px solid var(--linha);border-radius:20px;padding:20px 18px;display:flex;gap:14px;align-items:flex-start}
-.garantia svg{width:40px;height:40px;flex:none;color:var(--verde-medio)}
-.garantia h2{font-size:1.3rem;margin:2px 0 .35em}
-.garantia p{font-size:.96rem;margin:0 0 .6em;color:var(--texto-suave)}
-.garantia p:last-child{margin:0}
-.faq-tit{margin:44px 0 8px}
-.faq{max-width:760px;margin:0 auto}
-.faq details{border-bottom:1px solid var(--linha)}
-.faq summary{cursor:pointer;list-style:none;min-height:52px;padding:14px 36px 14px 0;font-weight:600;line-height:1.35;position:relative;border-radius:6px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:1.5rem;font-weight:400;color:var(--coral-forte);transition:transform .25s var(--suave)}
-.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
-.faq details p{color:var(--texto-suave);margin:0 0 16px;font-size:.96rem}
-
-/* Rodapé */
-.rodape{padding-block:28px 32px;background:var(--verde);color:var(--verde-claro);font-size:.88rem;text-align:center}
-.rodape p{margin:0 0 6px}
-.rodape strong{color:var(--branco);font-family:var(--serif)}
-
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .btn,.seta,.faq summary::after{transition:none}
-  .btn:active{transform:none}
-}
-
-/* Telas muito estreitas */
-@media (max-width:350px){
-  h1{font-size:1.62rem}
-  .plano{padding-inline:14px}
-  .preco strong{font-size:2.05rem}
-  .bonus li{grid-template-columns:56px 1fr;gap:12px}
-  .slide{flex-basis:90%}
-}
-
-/* Tablet */
-@media (min-width:600px){
-  .btn{width:auto;min-width:300px;display:inline-flex}
-  .hero__cta .btn,.plano .btn{width:100%}
-  .usos{grid-template-columns:1fr 1fr}
-  .recebe{grid-template-columns:1fr 1fr;column-gap:28px;border-top:0}
-  .slide{flex-basis:58%}
-}
-@media (min-width:760px){
-  body{font-size:17px}
-  .sec{padding-block:68px}
-  .bonus{grid-template-columns:repeat(3,1fr)}
-  .bonus li{grid-template-columns:1fr;align-items:start;padding:16px}
-  .bonus img{width:96px}
-  .garantia{padding:24px 28px}
-  .garantia svg{width:52px;height:52px}
-  .slide{flex-basis:46%}
-}
-@media (min-width:920px){
-  .hero{padding-block:52px 72px}
-  .hero__grid{grid-template-columns:1.1fr .9fr;gap:56px}
-  .hero__nota{text-align:left}
-  .hero__cta{max-width:380px}
-  .mock{max-width:440px;aspect-ratio:1/1.08}
-  .mock__folha{left:2%;top:12%;width:60%;transform:rotate(-3deg)}
-  .mock__carta{right:0;bottom:0;width:70%;transform:rotate(2.5deg)}
-  .usos{grid-template-columns:repeat(4,1fr)}
-  .uso{flex-direction:column}
-  .slide{flex-basis:36%}
-  /* Desktop: ordem crescente de preço; o Completo mantém o destaque */
-  .ofertas{grid-template-columns:repeat(3,1fr)}
-  .plano--essencial{order:1}.plano--ampliado{order:2}.plano--completo{order:3}
-}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 var(--sans);-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}a{color:var(--green)}
+h1,h2,h3{margin:0;font-family:var(--serif);line-height:1.13;text-wrap:balance}h1{font-size:clamp(1.85rem,7.5vw,3.2rem);color:var(--dark);letter-spacing:-.025em}h2{font-size:clamp(1.45rem,6vw,2.1rem);color:var(--dark)}h3{font-size:1.15rem}p{margin:0}
+:focus-visible{outline:3px solid var(--coral);outline-offset:4px}
+.wrap{width:100%;max-width:1020px;margin:auto;padding-inline:18px}.sec{padding-block:30px}.sec--alt{background:var(--mint)}.center{text-align:center}.intro{max-width:650px;margin-inline:auto}.muted{color:var(--muted)}
+.eyebrow{display:block;margin-bottom:7px;color:var(--coral);font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.lead{margin-top:9px;color:var(--muted);font-size:.98rem}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;padding:12px 16px;border:2px solid var(--green);border-radius:14px;background:var(--green);color:white;font:750 1rem/1.3 var(--sans);text-align:center;text-decoration:none;touch-action:manipulation;transition:background .18s,transform .18s}.btn:active{transform:scale(.98)}.btn--secondary{background:var(--paper);color:var(--green)}.cta-row{max-width:430px;margin:20px auto 0}.btn:hover{background:var(--dark);color:white}.btn span{margin-left:8px}.topo{padding-block:11px;border-bottom:1px solid var(--line);background:var(--paper)}.marca{display:flex;gap:8px;align-items:center;font:700 .95rem/1.2 var(--serif);color:var(--green)}.marca svg{width:25px;height:25px;flex:none}
+.hero{padding-block:20px 26px;background:radial-gradient(ellipse at 88% 45%,#FFE2D380,transparent 68%),var(--cream)}.hero__grid{display:grid;gap:14px}.hero__intro{text-align:center}.hero__intro .eyebrow{font-size:.7rem}.hero__intro h1 em{color:var(--green);font-style:normal}.hero__visual{margin:0;max-width:390px;width:100%;justify-self:center}.mock{position:relative;height:228px;max-width:350px;margin:auto}.mock::before{content:"";position:absolute;inset:3px 3px 1px 14px;background:var(--peach);border-radius:50% 50% 20px 20px;transform:rotate(-3deg)}.mock__cena{position:absolute;left:0;top:7px;width:48%;height:205px;object-fit:cover;object-position:50% 48%;border-radius:70px 70px 16px 16px;box-shadow:0 6px 16px #173F2E19}.mock__carta{position:absolute;right:2px;bottom:3px;width:66%;border-radius:10px;background:var(--paper);box-shadow:0 8px 20px #173F2E2B;transform:rotate(3deg)}.mock__legenda{margin-top:6px;color:var(--muted);font-size:.69rem;text-align:center}.hero__sub{font-size:1rem;color:var(--muted);text-align:center;max-width:470px;margin:auto}.hero__price{margin:12px 0 10px;text-align:center;font-size:.88rem;line-height:1.45}.hero__price strong{color:var(--green);font-size:1.12rem}.hero__cta{max-width:430px;margin:auto}.hero__nota{margin-top:8px;font-size:.76rem;text-align:center;color:var(--muted)}
+.usos{display:grid;grid-template-columns:1fr 1fr;gap:8px;list-style:none;padding:0;margin:16px 0 0}.uso{display:flex;gap:7px;align-items:center;min-height:48px;padding:10px;background:var(--paper);border:1px solid #CFDECD;border-radius:12px;font-size:.83rem;font-weight:650;line-height:1.3}.uso svg{width:21px;height:21px;flex:none;color:var(--coral)}
+.recebe{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;list-style:none;margin:16px 0;padding:0}.recebe li{text-align:center;font-size:.75rem;line-height:1.4;color:var(--muted);padding:9px 5px;background:var(--paper);border:1px solid var(--line);border-radius:10px}.recebe strong{display:block;font-size:.87rem;color:var(--green)}
+.demo-sub{color:var(--muted);font-size:.79rem;margin-bottom:9px}.trilho{position:relative;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;list-style:none;padding:2px 2px 5px;margin:0}.trilho::-webkit-scrollbar{display:none}.slide{flex:0 0 84%;scroll-snap-align:start;min-width:0}.slide figure{margin:0}.slide__quadro{position:relative;aspect-ratio:1.2/1;padding:10px;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:grid;place-items:center}.slide__quadro img{width:100%;height:100%;min-height:0;object-fit:contain;border-radius:6px}.slide--cena .slide__quadro{padding:0}.slide--cena img{object-fit:cover;object-position:50% 42%}.slide figcaption{margin-top:6px;font-size:.79rem;color:var(--muted)}.etiqueta{position:absolute;top:8px;left:8px;z-index:1;background:var(--green);color:white;border-radius:999px;padding:4px 8px;font-size:.64rem;font-weight:750}.slide--cena .etiqueta{background:var(--paper);color:var(--coral)}.ampliar{position:absolute;inset:0;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;border-radius:16px}.ampliar__icone{position:absolute;right:8px;bottom:8px;display:grid;place-items:center;width:38px;height:38px;background:var(--green);color:white;border-radius:50%;font-size:22px}.controles{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:10px}.controles[hidden]{display:none}.seta{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--green);border-radius:50%;background:var(--paper);color:var(--green);font-size:1.2rem;cursor:pointer;touch-action:manipulation}.seta:disabled{opacity:.35;cursor:default}.contador{font-size:.83rem;font-weight:700;font-variant-numeric:tabular-nums;min-width:40px;text-align:center}
+.zoom{border:0;padding:12px;border-radius:16px;background:var(--paper);width:min(94vw,760px);max-width:94vw;max-height:92vh}.zoom::backdrop{background:#14291EE0}.zoom img{width:100%;max-height:73vh;object-fit:contain}.zoom__rodape{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:10px}.zoom__legenda{font-size:.85rem;color:var(--muted)}.zoom__fechar{min-width:70px;min-height:44px;border:1px solid var(--green);border-radius:10px;background:var(--paper);color:var(--green);font-weight:700;cursor:pointer}
+.bonus{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px}.bonus li{display:flex;align-items:center;gap:12px;padding:10px 12px;background:var(--paper);border:1px solid var(--line);border-radius:12px}.bonus img{width:40px;height:56px;object-fit:contain;flex:none}.bonus h3{font-size:1rem;line-height:1.2}.bonus p{font-size:.81rem;color:var(--muted);margin-top:3px}.bonus__n{font-size:.63rem;letter-spacing:.04em;font-weight:800;color:var(--coral)}
+#ofertas{scroll-margin-top:16px}#ofertas:focus{outline:none}.ofertas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.plano{min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:15px 12px;display:flex;flex-direction:column}.plano--destaque{grid-column:1/-1;border:2px solid var(--green);padding:18px;background:linear-gradient(140deg,#E8F1E8,var(--paper) 65%);box-shadow:0 6px 22px #21574014}.plano__tag{align-self:flex-start;background:var(--green);color:white;padding:5px 10px;border-radius:999px;font-size:.69rem;font-weight:750;margin-bottom:10px}.plano--destaque h3{font-size:1.4rem}.plano__para{font-size:.82rem;color:var(--muted);margin:6px 0 12px}.preco{font-family:var(--serif);font-size:1.85rem;color:var(--green);line-height:1.1;margin:8px 0 2px}.plano--destaque .preco{font-size:2.5rem}.plano__pagamento{font-size:.7rem;color:var(--muted)}.plano ul{list-style:none;margin:12px 0 14px;padding:0;color:var(--muted);font-size:.81rem}.plano li{position:relative;padding-left:18px;margin-top:6px;line-height:1.35}.plano li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}.plano--destaque ul{font-size:.88rem}.plano__bonus{padding:10px 12px;background:var(--peach);border-radius:12px;margin:0 0 14px;font-size:.78rem;color:var(--coral);line-height:1.5}.plano__bonus strong{display:block;font-size:.84rem;margin-bottom:3px}.plano .btn{margin-top:auto;font-size:.82rem;min-height:48px;padding:10px 7px}.plano--destaque .btn{font-size:1rem;min-height:54px}.plano__nota{margin-top:8px;font-size:.7rem;text-align:center;color:var(--muted)}.ofertas__obs{margin:14px auto 0;max-width:650px;color:var(--muted);font-size:.75rem;text-align:center}
+.garantia{display:flex;gap:12px;align-items:flex-start;padding:17px;background:var(--paper);border:1px solid #CDDECD;border-radius:16px}.garantia svg{width:30px;height:36px;flex:none;color:var(--green)}.garantia h2{font-size:1.2rem}.garantia p{font-size:.84rem;color:var(--muted);margin-top:8px}.faq-tit{margin:28px 0 10px}.faq{max-width:720px;margin:auto}.faq details{border-bottom:1px solid #CDDECD}.faq summary{position:relative;min-height:50px;padding:14px 27px 14px 0;cursor:pointer;list-style:none;font-size:.88rem;font-weight:700;line-height:1.4}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:1.4rem;color:var(--green)}.faq details[open] summary::after{content:"−"}.faq details p{font-size:.88rem;line-height:1.55;color:var(--muted);margin:0 0 16px}.rodape{padding:22px 0;background:var(--dark);color:#E8F1E8;text-align:center;font-size:.73rem}.rodape strong{display:block;font:700 1rem var(--serif);color:white;margin-bottom:5px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:active{transform:none}}
+@media (max-width:350px){.wrap{padding-inline:14px}h1{font-size:1.8rem}.mock{height:210px}.mock__cena{height:186px}.hero__sub{font-size:.94rem}.uso{font-size:.77rem;padding:8px}.recebe li{font-size:.7rem}.recebe strong{font-size:.8rem}.plano{padding-inline:10px}.plano .btn{font-size:.77rem}.plano--destaque .btn{font-size:.95rem}}
+@media (min-width:600px){.wrap{padding-inline:26px}.sec{padding-block:42px}.hero__intro h1{max-width:650px;margin:auto}.mock{height:265px;max-width:380px}.mock__cena{height:236px}.usos{grid-template-columns:repeat(4,1fr)}.uso{justify-content:center}.recebe{max-width:660px;margin-inline:auto}.slide{flex-basis:46%}.bonus{grid-template-columns:repeat(3,1fr)}.bonus li{align-items:flex-start;flex-direction:column}.bonus img{width:48px;height:68px}.ofertas{max-width:800px;margin-inline:auto}.plano{padding:22px}.plano--destaque ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px}}
+@media (min-width:900px){.hero{padding-block:40px}.hero__grid{grid-template-columns:1.1fr .9fr;column-gap:36px;row-gap:20px;align-items:center}.hero__intro{grid-column:1;grid-row:1;text-align:left}.hero__visual{grid-column:2;grid-row:1/3}.hero__action{grid-column:1;grid-row:2}.hero__sub,.hero__price,.hero__nota{text-align:left}.hero__sub,.hero__cta{margin-left:0}.hero__cta{max-width:430px}.mock{height:340px;max-width:390px}.mock__cena{height:304px;width:53%}.mock__carta{width:73%}.slide{flex-basis:31%}.ofertas{max-width:none;grid-template-columns:1fr 1.35fr 1fr;align-items:stretch}.plano--destaque{grid-column:2;grid-row:1}.plano--essencial{grid-column:1;grid-row:1}.plano--ampliado{grid-column:3;grid-row:1}.plano--destaque ul{display:block}.plano__bonus{font-size:.74rem}.plano--destaque{padding:22px 18px}.plano--simples{margin-top:15px}.plano--simples .preco{margin-top:18px}}
 </style>
 </head>
-<body>
-<noscript><img height="1" width="1" style="display:none" alt=""
-src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscript=1"></noscript>
-
-<header class="topo">
-  <div class="wrap">
-    <span class="marca">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#24493A"/><path d="M10 21c0-6 4-10 12-11-1 7-5 11-11 11m0 0 6-6" fill="none" stroke="#FCF8F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Palavras que Acolhem
-    </span>
-  </div>
-</header>
-
+<body data-page-version="fe-mobile-20261003">
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscript=1"></noscript>
+<header class="topo"><div class="wrap"><span class="marca"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#215740"/><path d="M10 21c0-6 4-10 12-11-1 7-5 11-11 11m0 0 6-6" fill="none" stroke="#FFF9F0" stroke-width="2" stroke-linecap="round"/></svg>Palavras que Acolhem</span></div></header>
 <main>
-
-<!-- 1. HERO -->
-<section class="hero" aria-labelledby="titulo-hero">
-  <div class="wrap hero__grid">
-    <div>
-      <span class="selo">
-        <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13.5S2 10 2 5.8A2.9 2.9 0 0 1 8 4.4a2.9 2.9 0 0 1 6 1.4C14 10 8 13.5 8 13.5Z"/></svg>
-        Para cultos, encontros e visitas
-      </span>
-      <h1 id="titulo-hero"><span class="nw">No próximo culto,</span> acolha cada pessoa com uma <span class="nw">cartinha de fé.</span></h1>
-      <p class="hero__sub">Entregue aos irmãos e irmãs uma mensagem de carinho, esperança e fé. Um gesto simples de cuidado, no culto e além dele.</p>
-      <div class="hero__cta">
-        <a class="btn" href="#ofertas">Escolher meu kit
-          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12m0 0-5-5m5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <p class="hero__nota"><strong>Acesso digital, enviado por e-mail.</strong> <span class="nw">Kits a partir de R$ 10,00.</span></p>
-      </div>
-    </div>
-    <div>
-      <div class="mock">
-        <img class="mock__folha"
-             src="https://palavras-que-acolhem-site.pages.dev/assets/folha-a4-colorida-480.webp"
-             width="480" height="679" decoding="async"
-             alt="Página do PDF com seis cartinhas: esperança, paz, coragem, fé, gratidão e recomeço">
-        <img class="mock__carta"
-             src="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-paz.webp"
-             width="603" height="570" fetchpriority="high"
-             alt="Cartinha do tema Paz: Faça uma pausa. Nem tudo precisa ser carregado de uma vez só.">
-      </div>
-      <p class="mock__legenda">Amostra real do PDF: mensagens curtas para entregar <span class="nw">de mão em mão.</span></p>
-    </div>
+<section class="hero" aria-labelledby="titulo-hero"><div class="wrap hero__grid">
+  <div class="hero__intro"><span class="eyebrow">Para cultos, encontros e rodas de oração</span><h1 id="titulo-hero">Uma cartinha de fé para levar <em>do culto para a vida.</em></h1></div>
+  <figure class="hero__visual"><div class="mock">
+    <img class="mock__cena" src="assets/cena-igreja-cesta-480.webp" width="480" height="600" decoding="async" alt="Cena ilustrativa de cartinhas sendo escolhidas em uma cesta na igreja">
+    <img class="mock__carta" src="assets/cartinha-fe.webp" width="600" height="568" fetchpriority="high" alt="Cartinha real do tema Fé: A fé pode começar com uma oração curta: Deus, caminha comigo hoje.">
+  </div><figcaption class="mock__legenda">Cartinha real do kit · Foto ilustrativa de uso</figcaption></figure>
+  <div class="hero__action"><p class="hero__sub">Acolha irmãos e irmãs com mensagens de carinho, esperança e fé. Uma lembrança para entregar de mão em mão.</p>
+    <p class="hero__price">Kit Completo: <b>96 cartinhas + 3 bônus</b><br>por <strong>R$ 24,90</strong> · pagamento único</p>
+    <div class="hero__cta"><a class="btn" href="#ofertas">Quero compartilhar essas cartinhas <span aria-hidden="true">↓</span></a><p class="hero__nota">PDF por e-mail após o pagamento.<br>Outros kits a partir de R$ 10,00.</p></div>
   </div>
-</section>
-
-<!-- 2. O QUE É + PARA QUEM É -->
-<section class="sec sec--alt" aria-labelledby="titulo-quem">
-  <div class="wrap">
-    <span class="eyebrow">Para quem é</span>
-    <h2 id="titulo-quem">Para quem quer compartilhar a fé com um gesto de cuidado</h2>
-    <p class="lead">Onde a igreja se reúne, cabe uma palavra de carinho.</p>
-
-    <ul class="usos">
-      <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4v8M16.5 7.5h7"/><path d="M9 34V20l11-8 11 8v14"/><path d="M17 34v-7a3 3 0 0 1 6 0v7"/><path d="M5 34h30"/></svg>
-        <div><h3>No culto</h3><p>Na chegada, cada pessoa recebe uma palavra de acolhimento.</p></div>
-      </li>
-      <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="12" r="5"/><circle cx="27" cy="12" r="5"/><path d="M4 33c0-6 4-10 9-10s9 4 9 10M18 33c0-6 4-10 9-10s9 4 9 10"/></svg>
-        <div><h3>Na roda de oração</h3><p>Para encerrar a oração com uma mensagem de esperança.</p></div>
-      </li>
-      <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h28l-3 16H9L6 18Z"/><path d="M12 18c0-6 4-10 8-10s8 4 8 10"/><path d="M14 24h12M15 29h10"/></svg>
-        <div><h3>No encontro de mulheres</h3><p>Uma cesta na mesa e cada uma escolhe a sua cartinha.</p></div>
-      </li>
-      <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34V17L20 6l14 11v17"/><path d="M16 34V24h8v10"/></svg>
-        <div><h3>Na visita</h3><p>Leve algumas na bolsa e deixe uma com quem você foi ver.</p></div>
-      </li>
+</div></section>
+<section class="sec sec--alt" aria-labelledby="titulo-quem"><div class="wrap">
+  <div class="intro center"><span class="eyebrow">Para quem é</span><h2 id="titulo-quem">Para quem quer transformar fé em um gesto de cuidado.</h2><p class="lead">Uma palavra de carinho cabe em cada encontro.</p></div>
+  <ul class="usos">
+    <li class="uso"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 2v8m-3-5h6M7 29V16l9-7 9 7v13M13 29v-7h6v7M3 29h26"/></svg>Recepção do culto</li>
+    <li class="uso"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="9" r="4"/><circle cx="23" cy="9" r="4"/><path d="M2 27c0-7 3-10 8-10s8 3 8 10m-3 0c0-7 3-10 8-10s7 3 7 10"/></svg>Encontro de mulheres</li>
+    <li class="uso"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 27S3 20 3 11a6 6 0 0 1 13-2 6 6 0 0 1 13 2c0 9-13 16-13 16Z"/></svg>Rodas de oração</li>
+    <li class="uso"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 28V13L16 3l12 10v15M12 28V19h8v9"/></svg>Visitas e pequenos grupos</li>
+  </ul><div class="cta-row"><a class="btn btn--secondary" href="#ofertas">Escolher as cartinhas do meu encontro</a></div>
+</div></section>
+<section class="sec" aria-labelledby="titulo-recebe"><div class="wrap">
+  <div class="intro center"><span class="eyebrow">O que você recebe</span><h2 id="titulo-recebe">Veja as cartinhas por dentro.</h2><p class="lead">Mensagens prontas para acolher. Você escolhe o kit e compartilha o carinho.</p></div>
+  <ul class="recebe"><li><strong>54, 72 ou 96</strong>cartinhas, conforme o kit</li><li><strong>6 temas</strong>fé, paz, esperança e mais</li><li><strong>PDF para imprimir</strong>em casa ou na gráfica</li></ul>
+  <p class="demo-sub">Deslize para ver mais. Toque nas cartinhas para ampliar.</p>
+  <div class="carrossel" role="region" aria-roledescription="carrossel" aria-label="Amostras reais e ideias de uso">
+    <ul class="trilho" id="trilho" tabindex="0" aria-label="Amostras e cenas. Use as setas do teclado para navegar.">
+      <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="1 de 5"><figure><div class="slide__quadro"><span class="etiqueta">Mensagem real do kit</span><img src="assets/cartinha-fe.webp" width="600" height="568" loading="lazy" decoding="async" alt="Cartinha Fé: A fé pode começar com uma oração curta: Deus, caminha comigo hoje."><button class="ampliar" type="button" data-zoom="assets/cartinha-fe.webp" data-legenda="Uma das mensagens reais do tema Fé."><span class="sr-only">Ampliar cartinha Fé</span><span class="ampliar__icone" aria-hidden="true">+</span></button></div><figcaption><b>Fé.</b> Uma oração para acompanhar o dia.</figcaption></figure></li>
+      <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="2 de 5"><figure><div class="slide__quadro"><span class="etiqueta">Página real do PDF</span><img src="assets/folha-a4-colorida-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Folha A4 do kit com seis cartinhas organizadas para impressão"><button class="ampliar" type="button" data-zoom="assets/folha-a4-colorida.webp" data-legenda="Seis cartinhas por folha A4, prontas para imprimir e recortar."><span class="sr-only">Ampliar folha A4</span><span class="ampliar__icone" aria-hidden="true">+</span></button></div><figcaption><b>Assim chega o arquivo.</b> Seis cartinhas por folha A4.</figcaption></figure></li>
+      <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="3 de 5"><figure><div class="slide__quadro"><span class="etiqueta">Mensagem real do kit</span><img src="assets/cartinha-esperanca.webp" width="600" height="568" loading="lazy" decoding="async" alt="Cartinha real do tema Esperança, com uma mensagem de acolhimento"><button class="ampliar" type="button" data-zoom="assets/cartinha-esperanca.webp" data-legenda="Uma das mensagens reais do tema Esperança."><span class="sr-only">Ampliar cartinha Esperança</span><span class="ampliar__icone" aria-hidden="true">+</span></button></div><figcaption><b>Esperança.</b> Carinho para levar consigo.</figcaption></figure></li>
+      <li class="slide slide--cena" role="group" aria-roledescription="slide" aria-label="4 de 5"><figure><div class="slide__quadro"><span class="etiqueta">Ideia de uso · foto ilustrativa</span><img src="assets/cena-igreja-cesta.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Cena ilustrativa de uma cesta com cartinhas para acolher na igreja"></div><figcaption><b>Na igreja.</b> Uma cesta convidando a escolher uma mensagem.</figcaption></figure></li>
+      <li class="slide slide--cena" role="group" aria-roledescription="slide" aria-label="5 de 5"><figure><div class="slide__quadro"><span class="etiqueta">Ideia de uso · foto ilustrativa</span><img src="assets/cena-encontro-mulheres.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Cena ilustrativa de mulheres compartilhando cartinhas em um encontro"></div><figcaption><b>Nos encontros.</b> Uma mensagem entregue com carinho.</figcaption></figure></li>
     </ul>
-
-    <div class="cta-row center"><a class="btn" href="#ofertas">Escolher meu kit</a></div>
-  </div>
-</section>
-
-<!-- 3. O QUE VOCÊ VAI RECEBER + DEMONSTRAÇÃO -->
-<section class="sec" aria-labelledby="titulo-recebe">
-  <div class="wrap">
-    <span class="eyebrow">O que você recebe</span>
-    <h2 id="titulo-recebe">Pronto para imprimir e levar ao culto</h2>
-
-    <ul class="recebe">
-      <li><div><b>Cartinhas originais em PDF colorido</b><span>54, 72 ou 96, conforme o kit.</span></div></li>
-      <li><div><b>Seis temas</b><span>Esperança, paz, coragem, fé, gratidão e recomeço.</span></div></li>
-      <li><div><b>Seis cartões por folha A4</b><span>Com contorno para recortar. Imprime em casa ou na gráfica.</span></div></li>
-      <li><div><b>Versão econômica e cartões em branco</b><span>Nos kits Ampliado e Completo.</span></div></li>
-      <li><div><b>Acesso por e-mail</b><span>O link chega depois da confirmação do pagamento.</span></div></li>
-    </ul>
-
-    <h3 class="demo-tit" id="titulo-demo">Veja por dentro</h3>
-    <p class="demo-sub">Deslize para ver. Toque nas amostras do PDF para ampliar.</p>
-
-    <div class="carrossel" role="region" aria-roledescription="carrossel" aria-labelledby="titulo-demo">
-      <ul class="trilho" id="trilho" tabindex="0" aria-label="Amostras e cenas. Use as setas do teclado para navegar.">
-        <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="1 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--real">Amostra real do PDF</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/folha-a4-colorida-480.webp" width="480" height="679" loading="lazy" decoding="async"
-                   alt="Folha A4 do PDF com seis cartões em duas colunas, com contorno para recorte">
-              <button class="ampliar" type="button" data-zoom="https://palavras-que-acolhem-site.pages.dev/assets/folha-a4-colorida.webp" data-legenda="Folha A4 do PDF: seis cartões por página.">
-                <span class="sr-only">Ampliar folha A4</span><span class="ampliar__icone" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4.5 4.5M8.5 6v5M6 8.5h5"/></svg></span>
-              </button>
-            </div>
-            <figcaption><b>A folha A4.</b> Seis cartões por página.</figcaption>
-          </figure>
-        </li>
-        <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="2 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--real">Amostra real do PDF</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-paz.webp" width="603" height="570" loading="lazy" decoding="async"
-                   alt="Cartinha do tema Paz: Faça uma pausa. Nem tudo precisa ser carregado de uma vez só.">
-              <button class="ampliar" type="button" data-zoom="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-paz.webp" data-legenda="Tema Paz.">
-                <span class="sr-only">Ampliar cartinha Paz</span><span class="ampliar__icone" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4.5 4.5M8.5 6v5M6 8.5h5"/></svg></span>
-              </button>
-            </div>
-            <figcaption><b>Tema Paz.</b></figcaption>
-          </figure>
-        </li>
-        <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="3 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--real">Amostra real do PDF</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-coragem.webp" width="603" height="568" loading="lazy" decoding="async"
-                   alt="Cartinha do tema Coragem: Coragem não é ausência de medo. É dar um passo possível apesar dele.">
-              <button class="ampliar" type="button" data-zoom="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-coragem.webp" data-legenda="Tema Coragem.">
-                <span class="sr-only">Ampliar cartinha Coragem</span><span class="ampliar__icone" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4.5 4.5M8.5 6v5M6 8.5h5"/></svg></span>
-              </button>
-            </div>
-            <figcaption><b>Tema Coragem.</b></figcaption>
-          </figure>
-        </li>
-        <li class="slide slide--real" role="group" aria-roledescription="slide" aria-label="4 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--real">Amostra real do PDF</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-gratidao.webp" width="603" height="572" loading="lazy" decoding="async"
-                   alt="Cartinha do tema Gratidão: Agradeça por uma coisa pequena de hoje. O simples também merece ser lembrado.">
-              <button class="ampliar" type="button" data-zoom="https://palavras-que-acolhem-site.pages.dev/assets/cartinha-gratidao.webp" data-legenda="Tema Gratidão.">
-                <span class="sr-only">Ampliar cartinha Gratidão</span><span class="ampliar__icone" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4.5 4.5M8.5 6v5M6 8.5h5"/></svg></span>
-              </button>
-            </div>
-            <figcaption><b>Tema Gratidão.</b></figcaption>
-          </figure>
-        </li>
-        <li class="slide slide--cena" role="group" aria-roledescription="slide" aria-label="5 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--cena">Cena ilustrativa de uso</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/cena-igreja-cesta.webp" width="960" height="1200" loading="lazy" decoding="async"
-                   alt="Cena ilustrativa: cesta com cartinhas na igreja, de onde cada pessoa escolhe uma">
-            </div>
-            <figcaption><b>Na igreja.</b> Uma cesta para cada pessoa escolher a sua.</figcaption>
-          </figure>
-        </li>
-        <li class="slide slide--cena" role="group" aria-roledescription="slide" aria-label="6 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--cena">Cena ilustrativa de uso</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/cena-encontro-mulheres.webp" width="960" height="1200" loading="lazy" decoding="async"
-                   alt="Cena ilustrativa: mulheres trocando cartinhas num encontro">
-            </div>
-            <figcaption><b>Num encontro.</b> Uma cartinha entregue de mão em mão.</figcaption>
-          </figure>
-        </li>
-        <li class="slide slide--cena" role="group" aria-roledescription="slide" aria-label="7 de 7">
-          <figure style="margin:0">
-            <div class="slide__quadro">
-              <span class="etiqueta etiqueta--cena">Cena ilustrativa de uso</span>
-              <img src="https://palavras-que-acolhem-site.pages.dev/assets/cena-preparo-cartinhas.webp" width="960" height="1200" loading="lazy" decoding="async"
-                   alt="Cena ilustrativa: cartinhas recortadas sendo colocadas em envelopes">
-            </div>
-            <figcaption><b>No preparo.</b> Cartinhas recortadas e guardadas em envelopes.</figcaption>
-          </figure>
-        </li>
-      </ul>
-
-      <div class="controles" id="controles" hidden>
-        <button class="seta" type="button" id="anterior" aria-controls="trilho" aria-label="Slide anterior">
-          <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m12 4-6 6 6 6"/></svg>
-        </button>
-        <span class="contador" id="contador" aria-live="polite">1 / 7</span>
-        <button class="seta" type="button" id="proximo" aria-controls="trilho" aria-label="Próximo slide">
-          <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m8 4 6 6-6 6"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="cta-row center"><a class="btn" href="#ofertas">Escolher meu kit</a></div>
-  </div>
-</section>
-
-<dialog class="zoom" id="zoom" aria-label="Amostra ampliada">
-  <div class="zoom__caixa">
-    <img id="zoom-img" src="data:," alt="" width="803" height="1136">
-    <p class="zoom__legenda" id="zoom-legenda"></p>
-    <button class="zoom__fechar" type="button" id="zoom-fechar">Fechar</button>
-  </div>
-</dialog>
-
-<!-- 5. BÔNUS (antes das ofertas) -->
-<section class="sec sec--alt" aria-labelledby="titulo-bonus">
-  <div class="wrap">
-    <span class="eyebrow">Só no Kit Completo</span>
-    <h2 id="titulo-bonus">Três bônus para organizar e usar</h2>
-    <ul class="bonus">
-      <li>
-        <img src="https://palavras-que-acolhem-site.pages.dev/assets/bonus-expositor-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Placa A4 do expositor com o texto Pegue uma palavra para você">
-        <div><span class="bonus__n">Bônus 1</span><h3>Expositor de mesa</h3><p>Uma placa que convida cada pessoa a pegar a sua cartinha.</p></div>
-      </li>
-      <li>
-        <img src="https://palavras-que-acolhem-site.pages.dev/assets/bonus-separadores-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Página com seis separadores, um para cada tema">
-        <div><span class="bonus__n">Bônus 2</span><h3>Separadores e etiquetas</h3><p>Para organizar a cesta ou os pacotinhos por tema.</p></div>
-      </li>
-      <li>
-        <img src="https://palavras-que-acolhem-site.pages.dev/assets/bonus-guia-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Página do guia com ideias numeradas de uso">
-        <div><span class="bonus__n">Bônus 3</span><h3>Guia de 12 usos</h3><p>Ideias e roteiros curtos para recepção, visita e grupo.</p></div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- 6. OFERTAS
-     Ordem no HTML = ordem no celular (Completo, Ampliado, Essencial).
-     No desktop, o CSS reorganiza em ordem crescente de preço. -->
-<section class="sec" id="ofertas" aria-labelledby="titulo-ofertas" tabindex="-1">
-  <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">Kits</span>
-      <h2 id="titulo-ofertas">Escolha seu kit</h2>
-      <p class="lead">Os três têm os seis temas. Os maiores somam mensagens inéditas e extras.</p>
-    </div>
-
-    <div class="ofertas">
-      <article class="plano plano--completo plano--destaque" aria-labelledby="t-completo">
-        <span class="plano__tag">Mais cartinhas + 3 bônus</span>
-        <h3 id="t-completo">Kit Completo</h3>
-        <p class="plano__para">Para a recepção do culto, uma mesa de acolhimento ou um grupo.</p>
-        <p class="preco" id="preco-completo">
-          <s id="ancora-completo" hidden><span class="sr-only">De </span>R$ 34,90</s>
-          <strong><span class="sr-only" id="por-completo" hidden>Por </span><span id="valor-completo">R$ 24,90</span></strong>
-        </p>
-        <p class="prazo" id="prazo-completo" hidden role="timer" aria-live="off"></p>
-        <ul>
-          <li><b>96 cartinhas</b> coloridas</li>
-          <li>Seis temas</li>
-          <li>Versão econômica em tinta</li>
-          <li>Seis cartões em branco para dedicatórias</li>
-        </ul>
-        <div class="plano__bonus">
-          <p class="plano__bonus-tit">+ 3 bônus só deste kit</p>
-          <ul>
-            <li>Expositor de mesa</li>
-            <li>Separadores e etiquetas</li>
-            <li>Guia de 12 usos</li>
-          </ul>
-        </div>
-        <a class="btn" id="checkout-completo" href="https://pay.wiapy.com/COM7fqgw0aBE"
-           data-checkout data-plano="completo" data-valor="24.90">Quero o Kit Completo</a>
-      </article>
-
-      <article class="plano plano--ampliado plano--simples" aria-labelledby="t-ampliado">
-        <h3 id="t-ampliado">Kit Ampliado</h3>
-        <p class="plano__para">Mais variedade e espaço para escrever à mão.</p>
-        <p class="preco"><strong>R$ 15,00</strong></p>
-        <ul>
-          <li><b>72 cartinhas</b> coloridas</li>
-          <li>Seis temas</li>
-          <li>Versão econômica em tinta</li>
-          <li>Seis cartões em branco para dedicatórias</li>
-        </ul>
-        <a class="btn" id="checkout-ampliado" href="https://pay.wiapy.com/NJk-2Cg_J8gl"
-           data-checkout data-plano="ampliado" data-valor="15.00">Quero o Kit Ampliado</a>
-      </article>
-
-      <article class="plano plano--essencial plano--simples" aria-labelledby="t-essencial">
-        <h3 id="t-essencial">Kit Essencial</h3>
-        <p class="plano__para">Para começar com os seis temas.</p>
-        <p class="preco"><strong>R$ 10,00</strong></p>
-        <ul>
-          <li><b>54 cartinhas</b> coloridas</li>
-          <li>Seis temas</li>
-        </ul>
-        <a class="btn" id="checkout-essencial" href="https://pay.wiapy.com/_7l98W2MAcri"
-           data-checkout data-plano="essencial" data-valor="10.00">Quero o Kit Essencial</a>
-      </article>
-    </div>
-
-    <p class="ofertas__obs">Todos os kits são arquivos digitais, sem envio pelo correio. Complementos oferecidos no checkout são opcionais e cobrados à parte.</p>
-  </div>
-</section>
-
-<!-- 7. GARANTIA + FAQ -->
-<section class="sec sec--alt" aria-labelledby="titulo-garantia">
-  <div class="wrap">
-    <div class="garantia">
-      <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 8 10v12c0 10 7 18 16 22 9-4 16-12 16-22V10L24 4Z"/><path d="m17 24 5 5 9-10"/></svg>
-      <div>
-        <h2 id="titulo-garantia">Sete dias para desistir</h2>
-        <p>Você pode desistir em até 7 dias, contados da compra ou do recebimento dos arquivos, conforme o artigo 49 do Código de Defesa do Consumidor.</p>
-        <p>O reembolso é solicitado na própria plataforma em que a compra foi feita.</p>
-      </div>
-    </div>
-
-    <h2 class="center faq-tit">Perguntas frequentes</h2>
-    <div class="faq">
-      <details>
-        <summary>O produto é físico ou digital?</summary>
-        <p>Digital. Você recebe as cartinhas em PDF para imprimir; nada é enviado pelo correio.</p>
-      </details>
-      <details>
-        <summary>Como recebo as cartinhas?</summary>
-        <p>Depois da confirmação do pagamento, o link de acesso aos arquivos é enviado para o e-mail informado na compra. Se não encontrar, confira também o spam e a aba Promoções.</p>
-      </details>
-      <details>
-        <summary>Como imprimir? E se eu não tiver impressora?</summary>
-        <p>Imprima em papel A4, com a impressora em tamanho real (100%). Sem impressora em casa, envie o PDF para uma gráfica rápida ou papelaria e peça a impressão colorida em A4. Papel mais firme é opcional.</p>
-      </details>
-      <details>
-        <summary>Posso usar no culto e em encontros da igreja?</summary>
-        <p>Sim. A licença permite imprimir e compartilhar os cartões impressos em uso pessoal e comunitário, como cultos, rodas de oração, encontros e visitas.</p>
-      </details>
-      <details>
-        <summary>Qual é a diferença entre os kits?</summary>
-        <p>Essencial: 54 cartinhas. Ampliado: 72, versão econômica e 6 cartões em branco. Completo: 96, os extras do Ampliado e os três bônus.</p>
-      </details>
-      <details>
-        <summary>Posso imprimir mais de uma vez?</summary>
-        <p>Sim, para uso pessoal e comunitário. Não é permitido revender nem repassar os arquivos digitais.</p>
-      </details>
-      <details>
-        <summary>Como peço reembolso?</summary>
-        <p>Você tem 7 dias, contados da compra ou do recebimento dos arquivos. O reembolso é solicitado na própria plataforma em que a compra foi feita.</p>
-      </details>
-      <details>
-        <summary>Os complementos do checkout já estão incluídos?</summary>
-        <p>Não. Quando aparecem, são opcionais e cobrados à parte.</p>
-      </details>
-    </div>
-
-    <div class="cta-row center"><a class="btn" href="#ofertas">Escolher meu kit</a></div>
-  </div>
-</section>
-
+    <div class="controles" id="controles" hidden><button class="seta" type="button" id="anterior" aria-controls="trilho" aria-label="Slide anterior">←</button><span class="contador" id="contador" aria-live="polite">1 / 5</span><button class="seta" type="button" id="proximo" aria-controls="trilho" aria-label="Próximo slide">→</button></div>
+  </div><div class="cta-row"><a class="btn" href="#ofertas">Quero levar essas cartinhas ao culto</a></div>
+</div></section>
+<dialog class="zoom" id="zoom" aria-label="Amostra ampliada"><img id="zoom-img" src="data:," alt="" width="600" height="568"><div class="zoom__rodape"><p class="zoom__legenda" id="zoom-legenda"></p><button class="zoom__fechar" type="button" id="zoom-fechar">Fechar</button></div></dialog>
+<section class="sec sec--alt" aria-labelledby="titulo-bonus"><div class="wrap">
+  <div class="intro center"><span class="eyebrow">3 bônus incluídos no Completo</span><h2 id="titulo-bonus">Mais carinho. Menos trabalho para organizar.</h2></div>
+  <ul class="bonus">
+    <li><img src="assets/bonus-expositor-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Página real da placa Pegue uma palavra para você"><div><span class="bonus__n">BÔNUS 1</span><h3>Expositor de mesa</h3><p>Uma placa para convidar a pegar uma cartinha.</p></div></li>
+    <li><img src="assets/bonus-separadores-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Página real com separadores e etiquetas por tema"><div><span class="bonus__n">BÔNUS 2</span><h3>Separadores e etiquetas</h3><p>Organize suas mensagens por tema.</p></div></li>
+    <li><img src="assets/bonus-guia-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Página real do guia com ideias para usar as cartinhas"><div><span class="bonus__n">BÔNUS 3</span><h3>Guia de 12 usos</h3><p>Ideias para cultos, encontros e visitas.</p></div></li>
+  </ul>
+</div></section>
+<section class="sec" id="ofertas" aria-labelledby="titulo-ofertas" tabindex="-1"><div class="wrap">
+  <div class="intro center"><span class="eyebrow">Escolha seu kit</span><h2 id="titulo-ofertas">O próximo gesto de carinho pode começar aqui.</h2><p class="lead">Pagamento único. Arquivos digitais para imprimir e compartilhar.</p></div>
+  <div class="ofertas">
+    <article class="plano plano--completo plano--destaque" aria-labelledby="t-completo"><span class="plano__tag">Mais variedade + os 3 bônus</span><h3 id="t-completo">Kit Completo</h3><p class="plano__para">Para preparar seu encontro com mais mensagens e tudo organizado.</p><p class="preco"><strong>R$ 24,90</strong></p><p class="plano__pagamento">Pagamento único</p>
+      <ul><li><b>96 cartinhas coloridas</b> em seis temas</li><li>Versão econômica em tinta</li><li>6 cartões em branco para suas dedicatórias</li></ul>
+      <div class="plano__bonus"><strong>Os 3 bônus já estão incluídos:</strong>Expositor de mesa · Separadores e etiquetas · Guia de 12 usos</div>
+      <a class="btn" id="checkout-completo" href="https://pay.wiapy.com/COM7fqgw0aBE" data-checkout data-plano="completo" data-valor="24.90">Quero o Kit Completo por R$ 24,90</a><p class="plano__nota">Acesso por e-mail após a confirmação do pagamento.</p>
+    </article>
+    <article class="plano plano--essencial plano--simples" aria-labelledby="t-essencial"><h3 id="t-essencial">Essencial</h3><p class="preco"><strong>R$ 10,00</strong></p><p class="plano__pagamento">Pagamento único</p><ul><li><b>54 cartinhas</b> coloridas</li><li>Os seis temas</li></ul><a class="btn btn--secondary" id="checkout-essencial" href="https://pay.wiapy.com/_7l98W2MAcri" data-checkout data-plano="essencial" data-valor="10.00">Escolher Essencial</a></article>
+    <article class="plano plano--ampliado plano--simples" aria-labelledby="t-ampliado"><h3 id="t-ampliado">Ampliado</h3><p class="preco"><strong>R$ 15,00</strong></p><p class="plano__pagamento">Pagamento único</p><ul><li><b>72 cartinhas</b> coloridas</li><li>Os seis temas</li><li>Versão econômica</li><li>6 cartões em branco</li></ul><a class="btn btn--secondary" id="checkout-ampliado" href="https://pay.wiapy.com/NJk-2Cg_J8gl" data-checkout data-plano="ampliado" data-valor="15.00">Escolher Ampliado</a></article>
+  </div><p class="ofertas__obs">Produto digital. Impressão, cesta e embalagens físicas não estão incluídas. Complementos oferecidos no checkout são opcionais e cobrados à parte.</p>
+</div></section>
+<section class="sec sec--alt" aria-labelledby="titulo-garantia"><div class="wrap">
+  <div class="garantia"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M24 4 8 10v12c0 10 7 18 16 22 9-4 16-12 16-22V10L24 4Z"/><path d="m17 24 5 5 9-10"/></svg><div><h2 id="titulo-garantia">7 dias para decidir com tranquilidade.</h2><p>Você pode solicitar o reembolso na plataforma em que comprou, dentro do prazo de 7 dias da compra ou do recebimento dos arquivos.</p></div></div>
+  <h2 class="faq-tit center">Ficou alguma dúvida?</h2><div class="faq">
+    <details><summary>Como recebo as cartinhas? É um produto físico?</summary><p>Você recebe arquivos digitais em PDF. O link de acesso é enviado ao e-mail informado na compra depois da confirmação do pagamento. Confira também o spam e a aba Promoções. Você imprime as cartinhas; não há envio de produto físico pelo correio.</p></details>
+    <details><summary>Preciso ter impressora em casa?</summary><p>Você pode imprimir em casa ou enviar o PDF a uma gráfica ou papelaria. Use papel A4 e impressão em tamanho real (100%). São seis cartinhas por folha. O custo da impressão fica por sua conta.</p></details>
+    <details><summary>Posso usar no culto e imprimir mais de uma vez?</summary><p>Sim. A licença permite imprimir novamente e compartilhar as cartinhas impressas em uso pessoal e comunitário: cultos, rodas de oração, encontros de mulheres, pequenos grupos e visitas. Os arquivos digitais não podem ser revendidos nem repassados.</p></details>
+    <details><summary>As mensagens são versículos bíblicos?</summary><p>O kit contém mensagens originais de fé e acolhimento, em seis temas: esperança, paz, coragem, fé, gratidão e recomeço. Veja as amostras reais no carrossel para conhecer o estilo das cartinhas antes de comprar.</p></details>
+    <details><summary>Qual kit devo escolher?</summary><p>O Essencial tem 54 cartinhas. O Ampliado tem 72, versão econômica em tinta e 6 cartões em branco. O Completo reúne 96 cartinhas, os extras do Ampliado e os 3 bônus para organizar e usar no seu encontro. Os três kits têm os seis temas.</p></details>
+    <details><summary>Os complementos do checkout estão incluídos?</summary><p>Os complementos, quando oferecidos no checkout, são opcionais e cobrados à parte. Os três bônus apresentados nesta página já fazem parte do Kit Completo.</p></details>
+    <details><summary>Como solicito o reembolso?</summary><p>O pedido é feito na própria plataforma onde você realizou a compra, dentro do prazo de 7 dias da compra ou do recebimento dos arquivos.</p></details>
+  </div><div class="cta-row"><a class="btn" href="#ofertas">Escolher meu kit de cartinhas</a></div>
+</div></section>
 </main>
-
-<footer class="rodape">
-  <div class="wrap">
-    <p><strong>Palavras que Acolhem</strong></p>
-    <p>© 2026 Palavras que Acolhem - Todos os Direitos Reservados</p>
-  </div>
-</footer>
-
+<footer class="rodape"><div class="wrap"><strong>Palavras que Acolhem</strong><p>Cartinhas de fé para compartilhar carinho.</p><p>© 2026 · Todos os direitos reservados.</p></div></footer>
 <script>
-/* Carrossel manual: toque (scroll-snap nativo), setas, teclado. Sem rotação automática. */
-(function () {
-  var trilho = document.getElementById("trilho");
-  if (!trilho) return;
-  var slides = trilho.querySelectorAll(".slide");
-  var ant = document.getElementById("anterior");
-  var prox = document.getElementById("proximo");
-  var cont = document.getElementById("contador");
-  var total = slides.length;
-  var atual = 0;
-  var reduzir = false;
-  try { reduzir = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
-
-  document.getElementById("controles").hidden = false;
-
-  function indiceVisivel() {
-    var max = trilho.scrollWidth - trilho.clientWidth;
-    if (trilho.scrollLeft >= max - 4) return total - 1;
-    var melhor = 0, dist = Infinity;
-    for (var i = 0; i < total; i++) {
-      var d = Math.abs(slides[i].offsetLeft - trilho.scrollLeft);
-      if (d < dist) { dist = d; melhor = i; }
-    }
-    return melhor;
-  }
-  function atualizar() {
-    atual = indiceVisivel();
-    cont.textContent = (atual + 1) + " / " + total;
-    ant.disabled = atual === 0;
-    prox.disabled = atual === total - 1;
-  }
-  function ir(i) {
-    i = Math.max(0, Math.min(total - 1, i));
-    trilho.scrollTo({ left: slides[i].offsetLeft, behavior: reduzir ? "auto" : "smooth" });
-  }
-  ant.addEventListener("click", function () { ir(atual - 1); });
-  prox.addEventListener("click", function () { ir(atual + 1); });
-  trilho.addEventListener("keydown", function (e) {
-    if (e.key === "ArrowRight") { e.preventDefault(); ir(atual + 1); }
-    else if (e.key === "ArrowLeft") { e.preventDefault(); ir(atual - 1); }
-    else if (e.key === "Home") { e.preventDefault(); ir(0); }
-    else if (e.key === "End") { e.preventDefault(); ir(total - 1); }
-  });
-  var pendente = false;
-  trilho.addEventListener("scroll", function () {
-    if (pendente) return;
-    pendente = true;
-    requestAnimationFrame(function () { pendente = false; atualizar(); });
-  }, { passive: true });
-  window.addEventListener("resize", atualizar);
-  atualizar();
-
-  /* Ampliação das amostras reais */
-  var dlg = document.getElementById("zoom");
-  var img = document.getElementById("zoom-img");
-  var leg = document.getElementById("zoom-legenda");
-  var origem = null;
-  trilho.querySelectorAll("[data-zoom]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      var mini = b.parentNode.querySelector("img");
-      img.src = b.getAttribute("data-zoom");
-      img.alt = mini ? mini.alt : "";
-      leg.textContent = b.getAttribute("data-legenda") || "";
-      origem = b;
-      if (dlg.showModal) dlg.showModal(); else window.open(img.src, "_blank");
-    });
-  });
-  document.getElementById("zoom-fechar").addEventListener("click", function () { dlg.close(); });
-  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
-  dlg.addEventListener("close", function () { if (origem) origem.focus(); });
+(function(){
+  'use strict';
+  var trilho=document.getElementById('trilho'),slides=trilho.querySelectorAll('.slide'),ant=document.getElementById('anterior'),prox=document.getElementById('proximo'),contador=document.getElementById('contador'),atual=0,total=slides.length;
+  var reduzir=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('controles').hidden=false;
+  function posicao(i){return slides[i].offsetLeft-slides[0].offsetLeft;}
+  function atualizar(){var max=trilho.scrollWidth-trilho.clientWidth,dist=Infinity;atual=0;for(var i=0;i<total;i++){var d=Math.abs(posicao(i)-trilho.scrollLeft);if(d<dist){dist=d;atual=i;}}if(max>1&&trilho.scrollLeft>=max-4)atual=total-1;contador.textContent=(atual+1)+' / '+total;ant.disabled=atual===0;prox.disabled=atual===total-1;}
+  function ir(i){i=Math.max(0,Math.min(total-1,i));trilho.scrollTo({left:posicao(i),behavior:reduzir?'auto':'smooth'});}
+  ant.addEventListener('click',function(){ir(atual-1);});prox.addEventListener('click',function(){ir(atual+1);});
+  trilho.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();ir(atual+1);}else if(e.key==='ArrowLeft'){e.preventDefault();ir(atual-1);}else if(e.key==='Home'){e.preventDefault();ir(0);}else if(e.key==='End'){e.preventDefault();ir(total-1);}});
+  var pendente=false;trilho.addEventListener('scroll',function(){if(pendente)return;pendente=true;requestAnimationFrame(function(){pendente=false;atualizar();});},{passive:true});window.addEventListener('resize',atualizar);atualizar();
+  var dlg=document.getElementById('zoom'),img=document.getElementById('zoom-img'),leg=document.getElementById('zoom-legenda'),origem;
+  trilho.querySelectorAll('[data-zoom]').forEach(function(b){b.addEventListener('click',function(){img.src=b.dataset.zoom;img.alt=b.parentNode.querySelector('img').alt;leg.textContent=b.dataset.legenda;origem=b;if(dlg.showModal){dlg.showModal();}else{window.open(img.src,'_blank');}});});
+  document.getElementById('zoom-fechar').addEventListener('click',function(){dlg.close();});dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});dlg.addEventListener('close',function(){if(origem)origem.focus();});
 })();
 </script>
-
 <script>
-/* ============================================================
-   CONFIGURAÇÃO
-   ============================================================ */
-var CONFIG = {
-  // Preço riscado + prazo do Kit Completo. DESLIGADO.
-  // Só ative se TODAS as condições forem verdadeiras:
-  //  - R$ 34,90 é um preço regular efetivamente praticado;
-  //  - o desconto é real e o checkout cobra R$ 24,90 até o prazo;
-  //  - o prazo é o mesmo aplicado no checkout (data/hora fixa, não reinicia ao recarregar).
-  ofertaCompleto: {
-    ativa: false,
-    precoRegularPraticado: false,
-    prazoAplicadoNoCheckout: false,
-    precoRiscado: "R$ 34,90",
-    precoAtual: "R$ 24,90",
-    expiraEm: "",               // ISO 8601 com fuso, ex.: "2026-10-05T23:59:00-03:00"
-    precoAposPrazo: "R$ 34,90"  // exibido depois do prazo (o checkout precisa refletir o mesmo valor)
-  }
-};
-
-(function () {
-  "use strict";
-
-  /* ---------- Preço riscado + prazo (desligado por padrão) ---------- */
-  var o = CONFIG.ofertaCompleto;
-  var fim = o.expiraEm ? Date.parse(o.expiraEm) : NaN;
-  if (o.ativa && o.precoRegularPraticado && o.prazoAplicadoNoCheckout && !isNaN(fim) && fim > Date.now()) {
-    var ancora = document.getElementById("ancora-completo");
-    var por = document.getElementById("por-completo");
-    var valor = document.getElementById("valor-completo");
-    var prazo = document.getElementById("prazo-completo");
-    ancora.lastChild.textContent = o.precoRiscado;
-    valor.textContent = o.precoAtual;
-    ancora.hidden = false; por.hidden = false; prazo.hidden = false;
-
-    var dois = function (n) { return (n < 10 ? "0" : "") + n; };
-    var timer;
-    var tique = function () {
-      var r = Math.max(0, Math.floor((fim - Date.now()) / 1000));
-      if (r === 0) {
-        clearInterval(timer);
-        ancora.hidden = true; por.hidden = true; prazo.hidden = true;
-        valor.textContent = o.precoAposPrazo;
-        return;
-      }
-      var h = Math.floor(r / 3600), m = Math.floor(r % 3600 / 60), s = r % 60;
-      prazo.textContent = "Condição válida por mais " + (h ? h + "h " : "") + dois(m) + ":" + dois(s);
-    };
-    timer = setInterval(tique, 1000);
-    tique();
-  }
-
-  /* ---------- Evento interno de clique (não atrasa a navegação) ----------
-     Apenas dataLayer. InitiateCheckout e Purchase são disparados pela Wiapy. */
-  document.querySelectorAll("[data-checkout]").forEach(function (a) {
-    a.addEventListener("click", function () {
-      try {
-        var plano = a.getAttribute("data-plano");
-        var valor = parseFloat(a.getAttribute("data-valor"));
-        (window.dataLayer = window.dataLayer || []).push({ event: "clique_checkout", plano: plano, valor: valor, moeda: "BRL", link_id: a.id });
-      } catch (e) { /* rastreamento nunca bloqueia a compra */ }
-    });
-  });
+(function(){
+  'use strict';
+  var version=document.body.dataset.pageVersion;
+  var params=new URLSearchParams(location.search),keys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','utm_id','src','sck','fbclid'];
+  function preservarOrigem(a){try{var url=new URL(a.href);keys.forEach(function(k){var v=params.get(k);if(v&&!url.searchParams.get(k))url.searchParams.set(k,v);});a.href=url.href;}catch(e){}}
+  function registrar(nome,dados){try{var payload=Object.assign({event:nome,page_version:version},dados);(window.dataLayer=window.dataLayer||[]).push(payload);}catch(e){}}
+  document.querySelectorAll('[data-checkout]').forEach(function(a){preservarOrigem(a);a.addEventListener('click',function(){preservarOrigem(a);registrar('clique_checkout',{plano:a.dataset.plano,valor:Number(a.dataset.valor),moeda:'BRL',link_id:a.id});});});
+  // O clique na página continua distinto do IC real, gerado pela Wiapy.
 })();
 </script>
 </body>
