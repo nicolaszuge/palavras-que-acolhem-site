@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Palavras que Acolhem — cartinhas para imprimir</title>
-<meta name="description" content="Cartinhas de fé e acolhimento em PDF para imprimir, recortar e compartilhar em visitas, encontros e grupos. Kits a partir de R$ 10,00.">
+<title>Palavras que Acolhem — cartinhas de fé para acolher no culto</title>
+<meta name="description" content="Cartinhas de fé para acolher irmãos e irmãs no culto, na roda de oração, no encontro de mulheres e em visitas. Acesso digital em PDF, enviado por e-mail. Kits a partir de R$ 10,00.">
 <meta name="theme-color" content="#FCF8F0">
-<meta property="og:title" content="Palavras que Acolhem — cartinhas para imprimir">
-<meta property="og:description" content="Cartinhas de fé e acolhimento para imprimir e oferecer numa visita, num encontro ou a quem você quiser.">
+<meta property="og:title" content="Palavras que Acolhem — cartinhas de fé para acolher no culto">
+<meta property="og:description" content="Uma cartinha de fé para acolher cada pessoa no próximo culto. Acesso digital por e-mail, kits a partir de R$ 10,00.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://palavras-que-acolhem-site.pages.dev/">
 <meta property="og:image" content="https://palavras-que-acolhem-site.pages.dev/assets/folha-a4-colorida.webp">
@@ -78,7 +78,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--creme);color:var(--texto);font:16.5px/1.55 var(--sans);overflow-x:hidden;-webkit-tap-highlight-color:transparent}
 img{max-width:100%;height:auto;display:block}
 h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.18;color:var(--texto);margin:0 0 .4em;text-wrap:balance}
-h1{font-size:clamp(1.75rem,8vw,3.1rem);letter-spacing:-.015em;color:var(--verde)}
+h1{font-size:clamp(1.7rem,7.4vw,3.1rem);letter-spacing:-.015em;color:var(--verde)}
 h2{font-size:clamp(1.45rem,6vw,2.15rem)}
 h3{font-size:1.1rem}
 p{margin:0 0 .9em}
@@ -118,11 +118,13 @@ a{color:var(--verde)}
 .hero__sub{font-size:1.07rem;color:var(--texto-suave);margin-bottom:20px;max-width:30em}
 .hero__nota{font-size:.88rem;color:var(--texto-suave);margin:10px 0 0;text-align:center}
 .hero__nota strong{color:var(--texto);font-weight:600}
-.mock{position:relative;width:100%;max-width:380px;margin:0 auto;aspect-ratio:1/.98}
-.mock::before{content:"";position:absolute;inset:12% 6% 0 14%;border-radius:50%;background:var(--coral-claro)}
+.mock{position:relative;width:100%;max-width:380px;margin:0 auto;aspect-ratio:1/1.04}
+/* Moldura em arco (lembra uma janela de igreja) atrás da amostra real do PDF.
+   O topo do arco aparece acima da cartinha; a folha A4 fica à esquerda. */
+.mock::before{content:"";position:absolute;inset:0 5% 3% 5%;border-radius:50% 50% 18px 18px / 44% 44% 18px 18px;background:linear-gradient(180deg,var(--verde-claro) 0%,var(--coral-claro) 100%);box-shadow:inset 0 0 0 1px rgba(196,154,60,.45)}
 .mock img{position:absolute;background:var(--branco)}
-.mock__folha{left:3%;top:2%;width:47%;border-radius:4px;transform:rotate(-4deg);box-shadow:var(--sombra)}
-.mock__carta{right:1%;bottom:1%;width:83%;border-radius:10px;transform:rotate(1.5deg);box-shadow:0 12px 28px rgba(46,41,37,.18)}
+.mock__folha{left:1%;top:15%;width:44%;border-radius:4px;transform:rotate(-5deg);box-shadow:var(--sombra)}
+.mock__carta{right:0;bottom:0;width:83%;border-radius:10px;transform:rotate(1.5deg);box-shadow:0 12px 28px rgba(46,41,37,.18)}
 .mock__legenda{font-size:.8rem;color:var(--texto-suave);text-align:center;margin:8px 0 0}
 
 /* Para quem é */
@@ -267,7 +269,7 @@ a{color:var(--verde)}
   .hero__nota{text-align:left}
   .hero__cta{max-width:380px}
   .mock{max-width:440px;aspect-ratio:1/1.08}
-  .mock__folha{left:0;top:0;width:66%;transform:rotate(-2deg)}
+  .mock__folha{left:2%;top:12%;width:60%;transform:rotate(-3deg)}
   .mock__carta{right:0;bottom:0;width:70%;transform:rotate(2.5deg)}
   .usos{grid-template-columns:repeat(4,1fr)}
   .uso{flex-direction:column}
@@ -298,16 +300,16 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
   <div class="wrap hero__grid">
     <div>
       <span class="selo">
-        <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 1.5h5.5L13 5v9.5H4z"/><path d="M9.5 1.5V5H13"/></svg>
-        PDF para imprimir e compartilhar
+        <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13.5S2 10 2 5.8A2.9 2.9 0 0 1 8 4.4a2.9 2.9 0 0 1 6 1.4C14 10 8 13.5 8 13.5Z"/></svg>
+        Para cultos, encontros e visitas
       </span>
-      <h1 id="titulo-hero">Uma palavra de carinho para levar com você.</h1>
-      <p class="hero__sub">Cartinhas de fé e acolhimento para imprimir em casa. Entregue numa visita, num encontro ou a quem você quiser.</p>
+      <h1 id="titulo-hero"><span class="nw">No próximo culto,</span> acolha cada pessoa com uma <span class="nw">cartinha de fé.</span></h1>
+      <p class="hero__sub">Entregue aos irmãos e irmãs uma mensagem de carinho, esperança e fé. Um gesto simples de cuidado, no culto e além dele.</p>
       <div class="hero__cta">
         <a class="btn" href="#ofertas">Escolher meu kit
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12m0 0-5-5m5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <p class="hero__nota"><strong>Produto digital, sem envio físico.</strong> <span class="nw">Kits a partir de R$ 10,00.</span></p>
+        <p class="hero__nota"><strong>Acesso digital, enviado por e-mail.</strong> <span class="nw">Kits a partir de R$ 10,00.</span></p>
       </div>
     </div>
     <div>
@@ -321,7 +323,7 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
              width="603" height="570" fetchpriority="high"
              alt="Cartinha do tema Paz: Faça uma pausa. Nem tudo precisa ser carregado de uma vez só.">
       </div>
-      <p class="mock__legenda">Prévia real do PDF</p>
+      <p class="mock__legenda">Amostra real do PDF: mensagens curtas para entregar <span class="nw">de mão em mão.</span></p>
     </div>
   </div>
 </section>
@@ -330,25 +332,25 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
 <section class="sec sec--alt" aria-labelledby="titulo-quem">
   <div class="wrap">
     <span class="eyebrow">Para quem é</span>
-    <h2 id="titulo-quem">Para quem gosta de levar uma palavra boa</h2>
-    <p class="lead">São cartões com mensagens curtas de fé, esperança e carinho. Assim você tem sempre um pronto para oferecer.</p>
+    <h2 id="titulo-quem">Para quem quer compartilhar a fé com um gesto de cuidado</h2>
+    <p class="lead">Onde a igreja se reúne, cabe uma palavra de carinho.</p>
 
     <ul class="usos">
       <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h28l-3 16H9L6 18Z"/><path d="M12 18c0-6 4-10 8-10s8 4 8 10"/><path d="M14 24h12M15 29h10"/></svg>
-        <div><h3>Encontro de mulheres</h3><p>Uma cesta na mesa e cada uma escolhe a sua cartinha.</p></div>
-      </li>
-      <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34V17L20 6l14 11v17"/><path d="M16 34V24h8v10"/></svg>
-        <div><h3>Visita</h3><p>Leve algumas na bolsa e deixe uma com quem você foi ver.</p></div>
+        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4v8M16.5 7.5h7"/><path d="M9 34V20l11-8 11 8v14"/><path d="M17 34v-7a3 3 0 0 1 6 0v7"/><path d="M5 34h30"/></svg>
+        <div><h3>No culto</h3><p>Na chegada, cada pessoa recebe uma palavra de acolhimento.</p></div>
       </li>
       <li class="uso">
         <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="12" r="5"/><circle cx="27" cy="12" r="5"/><path d="M4 33c0-6 4-10 9-10s9 4 9 10M18 33c0-6 4-10 9-10s9 4 9 10"/></svg>
-        <div><h3>Pequeno grupo</h3><p>Para encerrar um grupo de oração ou de estudo com uma palavra.</p></div>
+        <div><h3>Na roda de oração</h3><p>Para encerrar a oração com uma mensagem de esperança.</p></div>
       </li>
       <li class="uso">
-        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="28" height="18" rx="2"/><path d="M4 11h32v5H4zM20 11v23M20 11c-3-6-10-6-9-1 1 3 9 1 9 1Zm0 0c3-6 10-6 9-1-1 3-9 1-9 1Z"/></svg>
-        <div><h3>Presente</h3><p>Junto de um mimo, de um bilhete ou dentro de um envelope.</p></div>
+        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h28l-3 16H9L6 18Z"/><path d="M12 18c0-6 4-10 8-10s8 4 8 10"/><path d="M14 24h12M15 29h10"/></svg>
+        <div><h3>No encontro de mulheres</h3><p>Uma cesta na mesa e cada uma escolhe a sua cartinha.</p></div>
+      </li>
+      <li class="uso">
+        <svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34V17L20 6l14 11v17"/><path d="M16 34V24h8v10"/></svg>
+        <div><h3>Na visita</h3><p>Leve algumas na bolsa e deixe uma com quem você foi ver.</p></div>
       </li>
     </ul>
 
@@ -360,7 +362,7 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
 <section class="sec" aria-labelledby="titulo-recebe">
   <div class="wrap">
     <span class="eyebrow">O que você recebe</span>
-    <h2 id="titulo-recebe">Pronto para imprimir hoje</h2>
+    <h2 id="titulo-recebe">Pronto para imprimir e levar ao culto</h2>
 
     <ul class="recebe">
       <li><div><b>Cartinhas originais em PDF colorido</b><span>54, 72 ou 96, conforme o kit.</span></div></li>
@@ -519,7 +521,7 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
       <article class="plano plano--completo plano--destaque" aria-labelledby="t-completo">
         <span class="plano__tag">Mais cartinhas + 3 bônus</span>
         <h3 id="t-completo">Kit Completo</h3>
-        <p class="plano__para">Para montar uma mesa, uma cesta ou levar a um grupo.</p>
+        <p class="plano__para">Para a recepção do culto, uma mesa de acolhimento ou um grupo.</p>
         <p class="preco" id="preco-completo">
           <s id="ancora-completo" hidden><span class="sr-only">De </span>R$ 34,90</s>
           <strong><span class="sr-only" id="por-completo" hidden>Por </span><span id="valor-completo">R$ 24,90</span></strong>
@@ -589,16 +591,20 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
     <h2 class="center faq-tit">Perguntas frequentes</h2>
     <div class="faq">
       <details>
-        <summary>O produto é físico?</summary>
-        <p>Não. São arquivos PDF. Você imprime os cartões; nada é enviado pelo correio.</p>
+        <summary>O produto é físico ou digital?</summary>
+        <p>Digital. Você recebe as cartinhas em PDF para imprimir; nada é enviado pelo correio.</p>
       </details>
       <details>
-        <summary>Como recebo os arquivos?</summary>
-        <p>Depois da confirmação do pagamento, o link de acesso é enviado para o e-mail informado na compra.</p>
+        <summary>Como recebo as cartinhas?</summary>
+        <p>Depois da confirmação do pagamento, o link de acesso aos arquivos é enviado para o e-mail informado na compra. Se não encontrar, confira também o spam e a aba Promoções.</p>
       </details>
       <details>
-        <summary>Como imprimir?</summary>
-        <p>Em papel A4, com a impressora em tamanho real (100%). Papel mais firme é opcional.</p>
+        <summary>Como imprimir? E se eu não tiver impressora?</summary>
+        <p>Imprima em papel A4, com a impressora em tamanho real (100%). Sem impressora em casa, envie o PDF para uma gráfica rápida ou papelaria e peça a impressão colorida em A4. Papel mais firme é opcional.</p>
+      </details>
+      <details>
+        <summary>Posso usar no culto e em encontros da igreja?</summary>
+        <p>Sim. A licença permite imprimir e compartilhar os cartões impressos em uso pessoal e comunitário, como cultos, rodas de oração, encontros e visitas.</p>
       </details>
       <details>
         <summary>Qual é a diferença entre os kits?</summary>
@@ -606,11 +612,11 @@ src="https://www.facebook.com/tr?id=1674353514358667&amp;ev=PageView&amp;noscrip
       </details>
       <details>
         <summary>Posso imprimir mais de uma vez?</summary>
-        <p>Sim, para uso pessoal e comunitário. Não é permitido revender ou repassar os arquivos.</p>
+        <p>Sim, para uso pessoal e comunitário. Não é permitido revender nem repassar os arquivos digitais.</p>
       </details>
       <details>
-        <summary>As fotos com pessoas são de clientes?</summary>
-        <p>Não. São cenas ilustrativas de uso. As amostras marcadas como “Amostra real do PDF” são do produto.</p>
+        <summary>Como peço reembolso?</summary>
+        <p>Você tem 7 dias, contados da compra ou do recebimento dos arquivos. O reembolso é solicitado na própria plataforma em que a compra foi feita.</p>
       </details>
       <details>
         <summary>Os complementos do checkout já estão incluídos?</summary>
